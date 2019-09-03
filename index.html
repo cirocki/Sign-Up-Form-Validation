@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form Validation - Javascript challenge 2019</title>
+    <link rel="stylesheet" href="/src/reset.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+        </div>
+        <div class="content">
+            <header class="form__header">
+                <p class="subheader">Join Us</p>
+                <h1 class="header">Braavos Yoga School</h1>
+            </header>
+            <form class="signup-form" novalidate>
+                <div class="field-wrapper">
+                    <label for="name">Name</label>
+                    <input type="text" class="signup-input" name="Name" id="name" onfocusout="checkName()">
+                    <span class="error-message"></span>
+                </div>
+                <div class="field-wrapper">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="signup-input" name="Email" id="email" onfocusout="checkEmail()">
+                    <span class="error-message"></span>
+                </div>
+                <div class="field-wrapper">
+                    <label for="password">Password</label>
+                    <input type="password" class="signup-input" name="Password" id="password"
+                        onfocusout="checkPassword()">
+                    <span class="error-message"></span>
+                </div>
+                <div class="field-wrapper">
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" class="signup-input" name="Confirm-password" id="confirm-password"
+                        onfocusout="checkConfirmedPassword()">
+                    <span class="error-message"></span>
+                </div>
+                <button class="btn" id="btn-signup">Sign Up</button>
+                <h3 class="result"></h3>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="info">
+        <h3 class="project-name">Javascript challenge 2019 - Sign Up Form Validation</h3>
+        <a class="project-author" href="https://cirocki.pl/" target="_blank">www.cirocki.pl</a>
+    </div>
+
+    <script src="/src/scripts.js"></script>
+</body>
+
+</html>
